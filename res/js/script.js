@@ -6,6 +6,12 @@ barsIcon.onclick = () => {
   bar.style.height = "500px";
   barsIcon.style.display = "none";
   crossIcon.style.display = "unset";
+
+  
+
+
+
+
 };
 
 crossIcon.onclick = () => {
