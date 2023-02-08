@@ -7,6 +7,10 @@
   font-family: "Itim", cursive;
 }
 
+span {
+  margin: 0.5em;
+}
+
 #bar {
   position: fixed;
   width: 100%;
@@ -63,11 +67,11 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   display: none;
 }
 
-
-@media only screen and (min-width: 600px) {
-  
+@media only screen and (max-width: 630px) {
+  #vpravoIcon {
+    opacity: 0;
+  }
 }
