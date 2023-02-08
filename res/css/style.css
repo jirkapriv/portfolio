@@ -8,16 +8,20 @@
 }
 
 span {
-  margin: 0.5em;
+  margin: 0.25em;
 }
 
 #bar {
   position: fixed;
   width: 100%;
   height: 50px;
-  border: 1px solid black;
-  transition: 0.0s;
-  background-color: aqua;
+  transition: 0.15s;
+  background-color: #23272a;
+  border: solid #3ba55c 1px;
+  color: #3ba55c;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #crossIcon {
@@ -38,7 +42,11 @@ i {
   height: 50px;
   width: 80%;
   float: right;
-  transition: .15s;
+  transition: 0.15s;
+}
+
+#vpravoIcon > i {
+  transform: scale(0.9);
 }
 #vlevoIcon {
   height: 50px;
@@ -51,8 +59,10 @@ i {
 }
 #neco {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   border: solid black 1px;
+  background-color: #36393f;
+  color: white;
 }
 
 #text {
@@ -71,8 +81,38 @@ i {
   display: none;
 }
 
+/*   Resp   */
+
 @media only screen and (max-width: 1200px) {
   #vpravoIcon {
     opacity: 0;
   }
 }
+
+/*   Resp   */
+/*   Animace nadtrhnutí   */
+
+.nadtrh {
+  position: relative;
+}
+
+.nadtrh::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #3ba55c;
+  top: -10px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nadtrh:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/*   Animace nadtrhnutí   */
