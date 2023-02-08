@@ -12,7 +12,7 @@
   width: 100%;
   height: 50px;
   border: 1px solid black;
-  transition: 0.5s;
+  transition: 0.15s;
   background-color: aqua;
 }
 
@@ -24,9 +24,7 @@ i {
   font-size: x-large;
   cursor: pointer;
   margin-right: 1em;
-  
 }
-
 #vpravoIcon {
   display: flex;
   align-items: center;
@@ -34,12 +32,12 @@ i {
   margin: 0;
   padding: 0;
   height: 50px;
-  width: 50%;
+  width: 80%;
   float: right;
 }
 #vlevoIcon {
   height: 50px;
-  width: 50%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -52,8 +50,24 @@ i {
   border: solid black 1px;
 }
 
-#text{
+#text {
+  margin-top: 70px;
+  width: 50%;
+  display: block;
+  margin: 5em auto;
+  text-align: center;
+}
+#podMenu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-margin-top: 70px;
+  display: none;
+}
 
+
+@media only screen and (min-width: 600px) {
+  
 }
