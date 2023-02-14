@@ -5,7 +5,7 @@ const vpravoIcon = document.getElementById("vpravoIcon");
 const podMenu = document.getElementById("podMenu");
 
 barsIcon.onclick = () => {
-  bar.style.height = "250px";
+  bar.style.height = "300px";
   barsIcon.style.display = "none";
   crossIcon.style.display = "unset";
   vpravoIcon.style.display = "none";
@@ -21,4 +21,3 @@ crossIcon.onclick = () => {
   vpravoIcon.style.display = "flex";
   podMenu.style.display = "none";
 };
-//test
