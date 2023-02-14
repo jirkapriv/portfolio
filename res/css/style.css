@@ -49,7 +49,7 @@ i {
   height: 50px;
   width: 80%;
   float: right;
-  transition: 0.15s;
+  transition: 1s;
 }
 
 #vpravoIcon > i {
@@ -71,7 +71,9 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: none;
+  /*display: none;*/
+  opacity: 0;
+  
 }
 
 /* obsah */
@@ -130,6 +132,10 @@ i {
 
 /*   Animace nadtrhnutí   */
 
+
+/*  Skewed bar */
+
+
 .skew {
   isolation: isolate;
   position: relative;
@@ -152,3 +158,4 @@ i {
   max-width: 60%;
   margin: auto;
 }
+/*  Skewed bar */
