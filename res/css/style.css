@@ -7,6 +7,11 @@
   font-family: "Itim", cursive;
   line-height: 1.5;
 }
+body {
+  background-color: #36393f;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #3ba55c;
@@ -73,15 +78,13 @@ i {
   justify-content: center;
   /*display: none;*/
   opacity: 0;
-  
 }
 
 /* obsah */
 
 #neco {
   width: 100%;
-  height: 100vh;
-  border: solid black 1px;
+  border: solid #36393f 1px;
   background-color: #36393f;
   color: white;
 }
@@ -132,9 +135,7 @@ i {
 
 /*   Animace nadtrhnutí   */
 
-
 /*  Skewed bar */
-
 
 .skew {
   isolation: isolate;
@@ -157,5 +158,121 @@ i {
 .inText {
   max-width: 60%;
   margin: auto;
+  color: white;
+  text-shadow: black 1px 0 10px;
+  font-size: 1.2em;
 }
 /*  Skewed bar */
+
+#hi {
+  padding-top: 1em;
+  margin: 6em;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
+  font-weight: 200;
+  transform: scale(1.2);
+  background: -webkit-linear-gradient(white, #3ba55c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #3ba55c 1px 0 10px;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 900px) {
+  #hi {
+    font-size: 0.9em;
+  }
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+
+#contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#first,
+#second,
+#third,
+#fourth {
+  border: solid white 1px;
+  min-height: 300px;
+  width: 400px;
+  margin: 2em;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  border: #3ba55c solid 2px;
+}
+
+#first {
+  background-color: #a2edfc;
+}
+#second {
+  background-color: #fcaea2;
+}
+#third {
+  background-color: #fcf6a2;
+}
+#fourth {
+  background-color: #fcc3a2;
+}
+
+#first:hover,
+#second:hover,
+#third:hover,
+#fourth:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1200px) {
+  #contain {
+    flex-direction: column;
+  }
+}
+
+.nahoreCard {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.obrCardContain {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+}
+
+.obrCard {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.contcCard {
+  padding: 25px;
+}
+
+.nadpisCard {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #363535;
+}
+
+.textCard {
+  font-size: 16px;
+  margin: 0;
+  color: #555454;
+}

@@ -9,11 +9,8 @@ barsIcon.onclick = () => {
   barsIcon.style.display = "none";
   crossIcon.style.display = "unset";
   vpravoIcon.style.display = "none";
-  //podMenu.style.display = "flex";
-  //podMenu.style.justifyContent = "center";
-  //podMenu.style.alignItems = "center";
   podMenu.style.opacity = 1;
-  podMenu.style.transition = "1.5s linear"
+  podMenu.style.transition = "1.5s linear";
 };
 
 crossIcon.onclick = () => {
@@ -21,9 +18,6 @@ crossIcon.onclick = () => {
   barsIcon.style.display = "unset";
   crossIcon.style.display = "none";
   vpravoIcon.style.display = "flex";
-  //podMenu.style.display = "none";
   podMenu.style.opacity = 0;
-  podMenu.style.transition = "0s"
-
-
+  podMenu.style.transition = "0s";
 };
