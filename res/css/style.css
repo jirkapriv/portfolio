@@ -113,6 +113,14 @@ i {
 .nadtrh {
   position: relative;
 }
+.nadtrh > a {
+  transition: 0.2s;
+}
+
+#vpravoIcon > .nadtrh > a:hover {
+  color: #20813e;
+  font-size: xx-large;
+}
 
 .nadtrh::before {
   content: "";
@@ -197,12 +205,15 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 3em;
 }
 
 #first,
 #second,
 #third,
-#fourth {
+#fourth,
+#fifth,
+#sixth {
   border: solid white 1px;
   min-height: 300px;
   width: 400px;
@@ -225,11 +236,19 @@ i {
 #fourth {
   background-color: #fcc3a2;
 }
+#fifth {
+  background-color: #757e7e;
+}
+#sixth {
+  background-color: #fca2a2;
+}
 
 #first:hover,
 #second:hover,
 #third:hover,
-#fourth:hover {
+#fourth:hover,
+#fifth:hover,
+#sixth:hover {
   transform: scale(1.05);
 }
 
@@ -269,10 +288,29 @@ i {
   font-size: 27px;
   margin-bottom: 10px;
   color: #363535;
+  text-align: center;
 }
 
 .textCard {
   font-size: 16px;
   margin: 0;
-  color: #555454;
+  color: #000;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  border-top: solid rgb(157, 150, 150) 1px;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 2em;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  background-color: #313336;
 }
