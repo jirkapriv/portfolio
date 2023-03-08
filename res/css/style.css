@@ -226,14 +226,23 @@ i {
   flex-direction: row;
   margin-bottom: 3em;
 }
+#containD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3em;
+  transition: 500ms;
+}
 
 #first,
 #second,
 #third,
 #fourth,
 #fifth,
-#sixth {
-  border: solid white 1px;
+#sixth,
+#seventh,
+#eight {
   min-height: 300px;
   width: 400px;
   margin: 2em;
@@ -241,6 +250,18 @@ i {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   border: #3ba55c solid 2px;
+}
+
+#tenth,
+#eleventh {
+  min-height: 400px;
+  width: 900px;
+  margin: 2em;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  border: #3ba55c solid 2px;
+  background-color: #f5eaea;
 }
 
 #first {
@@ -261,13 +282,23 @@ i {
 #sixth {
   background-color: #fca2a2;
 }
+#seventh {
+  background-color: #a2e7fc;
+}
+#eight {
+  background-color: #dfa2fc;
+}
 
 #first:hover,
 #second:hover,
 #third:hover,
 #fourth:hover,
 #fifth:hover,
-#sixth:hover {
+#sixth:hover,
+#seventh:hover,
+#eight:hover,
+#tenth:hover,
+#eleventh:hover {
   transform: scale(1.05);
 }
 
@@ -309,11 +340,24 @@ i {
   color: #363535;
   text-align: center;
 }
+.nadpisCardD {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #363535;
+  text-align: center;
+}
 
 .textCard {
   font-size: 16px;
   margin: 0;
   color: #000;
+}
+.textCardD {
+  font-size: 16px;
+  margin: 0;
+  color: #000;
+  padding: 0.5em;
 }
 
 #footer {
@@ -333,4 +377,56 @@ i {
   letter-spacing: 3px;
   background-color: #313336;
   opacity: 0.95;
+}
+
+#obrHolder {
+  background: url("../img/weatherApp.png") center center no-repeat;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  transition: 500ms;
+}
+
+@media only screen and (max-width: 1020px) {
+  #obrHolder {
+    transform: scale(0.8);
+  }
+  #containD {
+    transform: scale(0.8);
+    margin-top: -200px;
+  }
+  .textCardD {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 776px) {
+  #obrHolder {
+    transform: scale(0.94);
+  }
+  #containD {
+    transform: scale(0.5);
+    margin-top: -500px;
+    margin-bottom: -400px;
+  }
+  .textCardD {
+    font-size: 30px;
+  }
+  .nadpisCardD {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  #obrHolder {
+    display: none;
+  }
+  #containD {
+    margin-top: -270px;
+    margin-bottom: -70px;
+  }
+  #hi {
+    display: none;
+  }
+  #containD {
+    transform: scale(0.4);
+  }
 }
