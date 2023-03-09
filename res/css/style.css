@@ -386,9 +386,19 @@ i {
   margin: auto;
   transition: 500ms;
 }
+#obrHolderD {
+  background: url("../img/spsmb.png") center center no-repeat;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  transition: 500ms;
+}
 
 @media only screen and (max-width: 1020px) {
   #obrHolder {
+    transform: scale(0.8);
+  }
+  #obrHolderD {
     transform: scale(0.8);
   }
   #containD {
@@ -401,6 +411,9 @@ i {
 }
 @media only screen and (max-width: 776px) {
   #obrHolder {
+    transform: scale(0.94);
+  }
+  #obrHolderD {
     transform: scale(0.94);
   }
   #containD {
@@ -417,6 +430,9 @@ i {
 }
 @media only screen and (max-width: 490px) {
   #obrHolder {
+    display: none;
+  }
+  #obrHolderD {
     display: none;
   }
   #containD {
