@@ -261,7 +261,10 @@ i {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   border: #3ba55c solid 2px;
-  background-color: #f5eaea;
+ background: #007991; 
+ background: -webkit-linear-gradient(to right, #78ffd6, #007991);  
+ background: linear-gradient(to right, #78ffd6, #007991);
+ 
 }
 
 #first {
@@ -356,7 +359,7 @@ i {
 .textCardD {
   font-size: 16px;
   margin: 0;
-  color: #000;
+  color: black;
   padding: 0.5em;
 }
 
@@ -445,4 +448,11 @@ i {
   #containD {
     transform: scale(0.4);
   }
+}
+
+
+p > a{
+
+color: white;
+
 }
