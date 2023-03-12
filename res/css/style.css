@@ -250,6 +250,8 @@ i {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   border: #3ba55c solid 2px;
+  box-shadow: rgba(192, 229, 244, 0.12) 0px 2px 4px 0px,
+    rgba(177, 220, 238, 0.32) 0px 2px 16px 0px;
 }
 
 #tenth,
@@ -261,10 +263,13 @@ i {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   border: #3ba55c solid 2px;
- background: #007991; 
- background: -webkit-linear-gradient(to right, #78ffd6, #007991);  
- background: linear-gradient(to right, #78ffd6, #007991);
- 
+  background: #007991;
+  background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+  background: linear-gradient(to right, #78ffd6, #007991);
+  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px,
+    rgba(252, 252, 252, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px,
+    rgba(248, 248, 248, 0.07) 0px 8px 8px,
+    rgba(252, 252, 252, 0.07) 0px 16px 16px;
 }
 
 #first {
@@ -450,9 +455,21 @@ i {
   }
 }
 
+p > a {
+  color: white;
+}
 
-p > a{
+#contTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#contTab > a > img {
+  transform: scale(0.6);
+  transition: 200ms;
+}
 
-color: white;
-
+#contTab > a > img:hover {
+  transform: scale(0.7);
 }
